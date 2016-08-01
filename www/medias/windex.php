@@ -1,5 +1,5 @@
 <?php
-	$title = (isset($title)) ? $title : 'Ecoplaster - Crépis et isolation de façade, peintures intérieures et extérieures, devis en ligne gratuit.';
+	$title = (isset($title)) ? $title : 'Ecoplaster - Isolation thermique extérieur et Crépis, Devis en Ligne Gratuit.';
 	$description = (isset($description)) ? $description : 'Ecoplaster, votre partenaire pour vos travaux de crépis de façade avec ou sans isolation, avec tous types de système d\'isolation, peintures intérieures et extérieures, bardages, Briquettes et les petits parachèvement tels que pose de seuil, pose de luminaire et réadaptation des rives de toitures, sous corniche et des dépassants de toiture.';
 	$windex = (isset($windex)) ? $windex : 'Erreur';
 	$head = (isset($head)) ? $head : '';
