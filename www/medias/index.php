@@ -49,11 +49,11 @@ $windex = '
 						<h3>Dessins techniques</h3><br />
 						<p>Vous êtes ingénieurs, architectes, ...<br>Vous avez besoin d\'informations techniques, de cotes sur nos produits.<br>Vous trouverez ici ce que vous cherchez!<b> En savoir plus?</b></p>
 					</a>
-					<a href="'.NDD.'http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html" class="teaser-box">
+					<a href="http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html" class="teaser-box">
 						<h3>Norme RGE</h3><br />
 						<p>Ecoplaster est sous label Reconnu Garant de l\'Environnement (RGE), gage de qualité acquis suite à de nombreux chantiers de qualités. C\'est un label gratifiant dans le métier de l\'isolation extérieure.Néanmoins, en dehors de la qualité, ce label est un atout non négligeable car il est impossible d\'avoir certaines aides financières sans ce label.<b> Pour plus d\'informations cliquez ici </b></p>
 					</a>
-					<a href="'.NDD.'https://www.service-public.fr/particuliers/vosdroits/F1328" class="teaser-box">
+					<a href="https://www.service-public.fr/particuliers/vosdroits/F1328" class="teaser-box">
 						<h3>Dossier de subvention ANAH</h3><br />
 						<p>Notre entreprise travaille avec l\'Agence Nationale de l\'Habitat (ANAH) pour vous permettre de bénéficier d\'une aide financière (soumis à plusieurs critères)  lors de vos travaux d\'isolation extérieure. En effet la préparation de votre dossier est effectuée par nos soins et cela gratuitement.<b> Pour plus d\'informations cliquez ici </b></p>
 					<a href="'.NDD.'crepis-isolation-devis-fiches-techniques.php" class="teaser-box">
