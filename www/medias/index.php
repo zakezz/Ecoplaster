@@ -37,6 +37,10 @@ $windex = '
 							<h2><a href="'.NDD.'crepis-isolation-devis-primes.php"></a></h2>
 						</div>
 					</span>
+					<a href="'.NDD.'crepis-isolation-devis-qui-sommes-nous.php" class="teaser-box">
+						<h3>Qui sommes nous </h3><br />
+						<p>Ecoplaster, votre partenaire pour vos travaux de crépis, de façade avec ou sans isolation, avec tous types de système d\'isolation thermique extérieur, peintures intérieures et extérieures, bardages, briquettes et les petits parachèvement tels que pose de seuil ou pose de luminaire et réadaptation des rives de toitures, sous corniche et des dépassants de toiture. Bien entendu nous nous occupons également des ravalements. <b>Suite </b></p>
+					</a>
 					<a href="'.NDD.'crepis-isolation-devis-nous-contacter.php" class="teaser-box">
 						<h3>Rendez-nous visite</h3><br />
 						<p>Envie de visualiser notre travail réellement ? Alors inscrivez-vous à l\'une de nos visites de chantiers ouverts à tous. Il vous sera possible de voir des chantiers en cours (système de protection) ou terminés (finitions). <b>En savoir plus?</b></p>
