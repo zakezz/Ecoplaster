@@ -16,8 +16,8 @@ $PDF->AddPage();
  // Page header
 
     // Logo
-    $PDF->Image('images_devis/ecoplaster_top.png',35,20,120);
-    $PDF->Image('images_devis/icon_Qualibat.png',165,12,20);
+    $PDF->Image('images/ecoplaster_top.png',35,20,120);
+    $PDF->Image('images/icon_Qualibat.png',165,12,20);
     
     // Position du curseur
     $PDF->SetXY(15,50);
@@ -209,7 +209,7 @@ $PDF->MultiCell(0,4,$TotalTTC.",".$virgule." $euro", 0,'R', true);
 
 // Page footer
     // détail bancaire
-    $PDF->Image('images_devis/ecoplaster_bottom_fr.png',20,250,170);
+    $PDF->Image('images/ecoplaster_bottom_fr.png',20,250,170);
 
 
 // enregistre le document dans le répertoire local du serveur.    
