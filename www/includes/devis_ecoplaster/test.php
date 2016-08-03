@@ -1,30 +1,13 @@
 
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<!-- ============ -->
-<!-- balises Meta -->
-<!-- ============ -->
-
-<meta charset="ISO-8859-1" />
-<title>Test PHPMailer() !</title>
-
-<!-- ====================== -->
-<!-- Cascading Style Sheets -->
-<!-- ====================== -->
-
-<link rel="stylesheet" type="text/css" href="Styles.css" />
-</head>
-
-<body>
 <div id="bloc">
 
-<!-- ====================================== -->
-<!-- Envoi d'un message MAIL avec PHPMailer -->
-<!-- ====================================== -->
 
 <?php
+
+/*======================================*/
+/*Envoi d'un message MAIL avec PHPMailer*/
+/*======================================*/
+
 error_reporting(E_ALL);
 date_default_timezone_set('Europe/Paris');
 
@@ -76,7 +59,7 @@ $from = "ecoplasterfr@gmail.com";
 $to   = "ecoplasterfr@gmail.com";
 $cc ="zakaria_zz1@hotmail.com";
 
-$mail->SetFrom($from, "ef");
+$mail->SetFrom($from, "Sofian Hakmi Ecoplaster Sarl");
 $mail->AddAddress($to,"sh");
 $mail->AddAddress($cc,"zz");
 
@@ -84,11 +67,20 @@ $mail->AddAddress($cc,"zz");
 /* le sujet et le corps du message */
 /*=================================*/
 
-//$body = file_get_contents("message/content.html");
-$body = "salut la compagnie \n";
+$body = "Bonjour Mr Horrig,\n\n
+Vous trouverez ci-joint votre pré-devis. Nous restons a votre disposition pour toutes questions.
+\n
+Continuer à visiter notre site internet à l'adresse :
+http://www.ecoplaster.fr/
+\n\n
+Cordialement.
+
+ \n\n\n\n";
+$body .= file_get_contents("testjs.html");
 $body = preg_replace('/\\\\/','', $body);
 
-$mail->Subject = "Test mail";
+$date = date('d/m/Y');
+$mail->Subject = "ECOPLASTER - Devis - ".$date;
 $mail->MsgHtml($body);
 // si ne lit pas les balise html
 $mail->AltBody = "Bonjour, vous trouverez en pièce jointe votre pré-devis. \n cordialement l'équipe Ecoplaster \n";
@@ -110,6 +102,4 @@ unset($mail);
 <br /><?php echo $mess ?>
 
 </div>
-<div id="footer">Ne pas Oublier de lancer "openssl" dans WampServer !</div>
-</body>
-</html>
+
