@@ -1,7 +1,7 @@
 
 
 
-<div id="bloc">
+
 <?php
 
 /*======================================*/
@@ -59,11 +59,11 @@ $mail->Encoding      = "8bit";
 
 $from = "ecoplasterfr@gmail.com";
 $to   = "ecoplasterfr@gmail.com";
-$cc ="zakaria_zz1@hotmail.com";
+$cc = $_POST['email'];
 
 $mail->SetFrom($from, "Sofian Hakmi Ecoplaster Sarl");
 $mail->AddAddress($to,"sh");
-$mail->AddAddress($cc,"zz");
+$mail->AddAddress($cc, $nom);
 
 /*=================================*/
 /* le sujet et le corps du message */
@@ -87,6 +87,7 @@ $mail->MsgHtml($body);
 // si ne lit pas les balise html
 $mail->AltBody = "Bonjour, vous trouverez en pièce jointe votre pré-devis. \n cordialement l'équipe Ecoplaster \n";
 $mail->AddAttachment("devis_clients/".$numclient."_devis_ecoplaster.pdf");
+$mail->AddAttachment("devis_clients/condition.pdf");
 
 /*==========================*/
 /* Envoi et test du message */
@@ -101,7 +102,7 @@ $mail->SmtpClose();
 unset($mail);
 ?>
 
-<br /><?php //echo $mess; ?>
+<?php //echo $mess; ?>
 
-</div>
+
 

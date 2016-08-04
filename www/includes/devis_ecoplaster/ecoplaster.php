@@ -209,7 +209,16 @@
 				
 				<br />
 					
+					<tbody><tr>
+						<td align="center">M</td>
+						<td align="center"><input  id="monsieur"  name="status" value="M" type="radio" checked='checked'></td>
+						<td align="center">Mme</td>
+						<td align="center"><input  id="madame"  name="status" value="Mme"  type="radio"></td>
+					</tr></tbody>
+					<br />
 					Nom - Prenom : <input type="text" name="nom-prenom" required /><br/>
+					Adresse : <input type="text" name="adresse" required /><br/>
+					Ville : <input type="text" name="ville" required /><br/>
 					Code postal : <input type="text" name="CP" required /><br/>
 					email : <input type="text" name="email" required /><br/>
 					T&eacute;l&eacute;phone : <input type="text" name="phone" size="13" required /><br/>

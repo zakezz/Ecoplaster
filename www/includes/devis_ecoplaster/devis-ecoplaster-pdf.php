@@ -42,9 +42,10 @@ $numclient
 ECOPLASTER
 90 jours", 0,'R');
 
+$status=$_POST['status'].".";
 $nom=$_POST['nom-prenom'];
-$adresse="9 allee du petit merisier";
-$ville="Goussainville";
+$adresse=$_POST['adresse'];;
+$ville=$_POST['ville'];;
 $cp=$_POST['CP'];
 //Destinataire
 $PDF->SetXY(135,40);
@@ -52,7 +53,7 @@ $PDF->SetFont('Arial','B',10);
 $PDF->MultiCell(0,4,"Destinataire :", 0,'L');
 $PDF->SetXY(135,45);
 $PDF->SetFont('Arial','',10);
-$PDF->MultiCell(30,4,utf8_decode("$nom
+$PDF->MultiCell(30,4,utf8_decode("$status $nom
 $adresse
 $ville
 $cp
@@ -214,6 +215,10 @@ $PDF->MultiCell(0,4,$TotalTTC.",".$virgule." $euro", 0,'R', true);
 
 // enregistre le document dans le répertoire local du serveur.    
 $PDF->Output("devis_clients/".$numclient."_devis_ecoplaster.pdf",'F');
+
+// envoie du mail au client
+//include("Mailer-ecoplaster.php");
+
 
 ?>
 <!DOCTYPE html">
