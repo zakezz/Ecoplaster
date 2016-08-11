@@ -1,0 +1,126 @@
+
+
+/*****************************Postions des éléments************************************/
+
+/*on defini les marges H/B:10px et G/D:0 , on centre les éléments de type block*/
+body
+{
+  margin: 10px 0 ;
+  padding: 0 ;
+  text-align: center ;
+}
+
+/*largeur 770px, marge automatique centre le bloc, alignement à gauche, mise en form texte */
+div#conteneur
+{
+	width: 770px ;
+	margin: 0 auto ;
+	text-align: left ;
+	color: #231F20;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 10pt;
+	font-style: normal;
+}
+
+
+/*Hauteur du header pour le titre du site */
+h1#header
+{
+  height: 258px ;
+}
+
+/*display transform l'element en block se qui nous permet de lui donner dimmention*/
+h1#header a
+{
+    width: 300px ;
+    height: 150px ;
+    display: block ;
+    position: relative ;
+    left: 320px ;
+    top: 15px ;
+    text-indent: -5000px ;
+}
+
+/*Dimention du contenu */
+div#contenu {
+    padding: 0px 38px 0 44px;
+}
+
+
+td{ 
+color:#393939; 
+font-family:Arial, Helvetica, sans-serif, Verdana; 
+font-size:10pt; 
+width:150px;
+}
+
+
+/*****************************Couleur/Images************************************/
+
+/*Taille/Style du texte et couleur de fond */
+body
+{
+    font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+    background: #dea ;
+}
+
+/*Bordure et couleur de fond*/
+div#conteneur
+{
+    border: 2px solid #ab4 ;
+    background: #D8D8D8 ;
+}
+
+/*Image de fond pour le header*/
+h1#header
+{
+    background: url(../images/ecoplaster.jpg) no-repeat center top;
+}
+
+/*Icon pour le titre et dimention*/
+.title
+{
+    padding-left: 163px ;
+    line-height: 25px ;
+    font-size: 1.4em ;
+    background: url(../images/icon_ecoplaster.jpg) no-repeat left bottom ;
+    color: #9b2 ;
+    border-bottom: 1px solid #9b2 ;
+}
+
+/*On justifie les paragraphe et montre les indentation*/
+div#contenu p
+{
+    text-align: justify ;
+    text-indent: 2em ;
+    line-height: 1.7em ;
+}
+
+/*indentation des input infoperso */
+div#information_personnel fieldset label{
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+/*etoile rouge*/
+.text_red{color:red;font-size: 15px}
+.infos_obligatoires{text-align: right}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
