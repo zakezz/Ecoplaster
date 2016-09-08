@@ -26,7 +26,8 @@
 
 	// On récupère le numéro de client de la base pour l'attribuer au nouveau client
 	$reponse = $bdd->query('SELECT MAX(id_client) FROM Clients_eco 
-		WHERE nom_prenom = "'.$_POST['nom-prenom'].'" AND cp = '.$_POST['CP'].' AND telephone = '.$_POST['phone'].' AND email= "'.$_POST['email'].'" 
+		WHERE nom_prenom = "'.$_POST['nom-prenom'].'" AND cp = '.$_POST['CP'].' 
+		AND telephone = '.$_POST['phone'].' AND email= "'.$_POST['email'].'" 
 		ORDER BY id_client');
 	$donnees = $reponse->fetch();
 	$reponse -> closeCursor(); 

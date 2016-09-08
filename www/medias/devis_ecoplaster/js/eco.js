@@ -51,7 +51,7 @@ function calculSurface() {
 		var largeurId ='Largeur_facade_'+i;
 		var hauteurId ='Hauteur_facade_'+i;
 		var hauteurPignonId ='Hauteur_pignon_'+i;
-		var surfaceTotal ='surface_facade_'+i;
+
 		
 		if($('input[type=radio][name='+pignonId+']:checked').val()=="oui"){
 			
@@ -98,6 +98,27 @@ function checkEmail(emailVal) {
 	}
 }
 
+/*vérification d'un numéro de téléphone valide*/
+function checkTel(telVal) {
+	var filter = /^0[1-68]([-. ]?[0-9]{2}){4}$/;
+	if (!filter.test(telVal)) {
+		alert('Votre numéro de téléphone est invalide');
+		return false;
+	} else {
+		return true;
+	}
+}
+
+/*vérification d'un code postal valide*/
+function checkCP(cpVal) {
+	var filter = /^[0-9]{5}$/;
+	if (!filter.test(cpVal)) {
+		alert('Votre code postal est invalide');
+		return false;
+	} else {
+		return true;
+	}
+}
 /* 
 $(function(){
 	$('#images').MultiFile({

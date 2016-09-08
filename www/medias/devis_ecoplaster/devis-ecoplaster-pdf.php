@@ -2,6 +2,16 @@
 
 <?php
 
+// On rend inoffensives les balises HTML que le visiteur a pu entrer
+$_POST['nom-prenom'] = htmlspecialchars($_POST['nom-prenom']); 
+$_POST['adresse'] = htmlspecialchars($_POST['adresse']); 
+$_POST['ville'] = htmlspecialchars($_POST['ville']); 
+$_POST['CP'] = htmlspecialchars($_POST['CP']); 
+$_POST['email'] = htmlspecialchars($_POST['email']);
+$_POST['phone'] = htmlspecialchars($_POST['phone']);
+
+
+
 //Connexion à la BDD
 include("bdd-ecoplaster.php");
 
@@ -49,6 +59,10 @@ $PDF->MultiCell(30,4,"$date
 $numclient
 ECOPLASTER
 90 jours", 0,'R');
+
+ 
+
+
 
 $status=$_POST['status'].".";
 $nom=$_POST['nom-prenom'];
@@ -138,7 +152,7 @@ $proprieteContenu = array(
 
 //recuperation des données
 $surface=$_POST['Surface_totale'];
-$echaffaudage=10;
+$echaffaudage=$surface;
 $totalITE = 95*$surface;
 $totalEchaffaudage = 9*$echaffaudage;
 $seuil=$_POST['NombreFenetre'];
@@ -246,7 +260,7 @@ echo '
 ';
 
 
-// On ajoute un nouveau client dans client_ecoplaster
+// On ajoute le lien du devis du nouveau client dans client_ecoplaster
 
 $bdd->exec('UPDATE Clients_eco SET lien_devis= \'devis_clients/'.$numclient.'_devis_ecoplaster.pdf\'  WHERE id_client = \''.$numclient.'\'');
 $req->closeCursor();

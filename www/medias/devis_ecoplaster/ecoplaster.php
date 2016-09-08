@@ -224,13 +224,13 @@
 							<input type="text" name="ville" required /><br />
 						
 							<label for="cp">Code postal : <span class="text_red">*</span></label>
-							<input type="text" name="CP" required /><br />
+							<input type="text" name="CP" required onChange="checkCP(this.value)" /><br />
 							
 							<label for="email">email : <span class="text_red">*</span></label>
-							<input type="text" name="email" required /><br />
+							<input type="text" name="email" required onChange="checkEmail(this.value)"/><br />
 							
 							<label for="phone">T&eacute;l&eacute;phone : <span class="text_red">*</span></label>
-							<input type="text" name="phone" size="13" required /><br />
+							<input type="text" name="phone" size="13" required onChange="checkTel(this.value)" /><br />
 						
 					
 				</fieldset>	
