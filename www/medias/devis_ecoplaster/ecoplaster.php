@@ -214,7 +214,7 @@
 						<input  id="monsieur"  name="status" value="M" type="radio" checked='checked'>M
 						<input  id="madame"  name="status" value="Mme"  type="radio">Mme<br /> 
 						
-							<label for="nom">Nom - Prenom : <span class="text_red">*</span></label>
+							<label for="nom">Nom - Pr&eacute;nom : <span class="text_red">*</span></label>
 							<input type="text" name="nom-prenom" required /><br />
 				
 							<label for="adresse">Adresse : <span class="text_red">*</span></label>

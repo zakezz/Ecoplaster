@@ -61,8 +61,8 @@ $from = "ecoplasterfr@gmail.com";
 $to   = "ecoplasterfr@gmail.com";
 $cc = $_POST['email'];
 
-$mail->SetFrom($from, "Sofian Hakmi Ecoplaster Sarl");
-$mail->AddAddress($to,"sh");
+$mail->SetFrom($from, "Adela KISTAS Ecoplaster Sarl");
+$mail->AddAddress($to,"ak");
 $mail->AddAddress($cc, $nom);
 
 /*=================================*/
@@ -72,13 +72,13 @@ $mail->AddAddress($cc, $nom);
 $body = "Bonjour $status $nom,<br \><br \>
 Vous trouverez ci-joint votre pr&eacute;-devis. Nous restons a votre disposition pour toutes questions.
 <br \>
-Continuer &agrave; visiter notre site internet &agrave; l'adresse : <br \>
+Continuez &agrave; visiter notre site internet &agrave; l'adresse : <br \>
 http://www.ecoplaster.fr/
 <br \><br \>
 Cordialement.
 
 <br \><br \><br \><br \>";
-$body .= file_get_contents("coordonnee-sh.html");
+$body .= file_get_contents("coordonnee-ak.html");
 $body = preg_replace('/\\\\/','', $body);
 
 $date = date('d/m/Y');

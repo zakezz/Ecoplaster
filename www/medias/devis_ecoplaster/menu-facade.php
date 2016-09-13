@@ -175,7 +175,7 @@
 					name="Surface_totale" value="0" size="5px"/> m<sup>2</sup></td>
 					
 				<br \>
-				<td colspan="2">Prix éstimatif des travaux TTC sans seuils fenêtres: <input type="text" id="Prix_totale" readonly="readonly"
+				<td colspan="2">Prix estimatif des travaux TTC sans seuils fenêtres: <input type="text" id="Prix_totale" readonly="readonly"
 					name="Prix_totale" value="0" size="5px"/> €</td>
 					
 				<br \>
