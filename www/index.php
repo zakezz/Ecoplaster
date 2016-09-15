@@ -28,7 +28,7 @@ ini_set('display_errors', 1);
 	elseif($lurl2[1] == 'crepis-isolation-devis-nous-contacter.php') 	$page_ici = 'nous-contacter';
 	elseif($lurl2[1] == 'crepis-isolation-devis-produits.php') 			$page_ici = 'produits';
 	elseif($lurl2[1] == 'crepis-isolation-devis-videos.php' or isset($_GET['id'])) 			$page_ici = 'videos';
-	elseif($lurl2[1] == 'crepis-isolation-devis-devis-en-ligne.php') 	$page_ici = 'devis-en-ligne';
+	elseif($lurl2[1] == 'crepis-isolation-devis-devis-en-ligne.php') 	$page_ici = 'devis_ecoplaster/iframe_devis';
 	elseif($lurl2[1] == 'crepis-isolation-devis-primes.php') 			$page_ici = 'primes';
 	elseif($lurl2[1] == 'crepis-isolation-devis-garanties.php') 		$page_ici = 'garanties';
 	elseif($lurl2[1] == 'galerie.php' or isset($_GET['id_album'])) 									$page_ici = 'galerie';
