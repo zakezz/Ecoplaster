@@ -77,7 +77,11 @@ http://www.ecoplaster.fr/
 <br \><br \>
 Cordialement.
 
-<br \><br \><br \><br \>";
+<br \><br \>
+<br \><br \>
+Le devis été réalisé par : $status $nom <br \> Tel : $tel <br \> email : $email <br \> adresse : $adresse <br \>$ville<br \>
+$cp<br \>
+<br \><br \>";
 $body .= file_get_contents("coordonnee-ak.html");
 $body = preg_replace('/\\\\/','', $body);
 

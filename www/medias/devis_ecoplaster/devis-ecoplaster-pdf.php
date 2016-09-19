@@ -26,7 +26,7 @@ $PDF->AddPage();
  // Page header
 
     // Logo
-    $PDF->Image('images/ecoplaster_top.png',35,20,120);
+    $PDF->Image('images/ecoplaster_top.png',35,13,120);
     $PDF->Image('images/icon_Qualibat.png',165,12,20);
     
     // On rend l'alpha semi transparent
@@ -69,6 +69,9 @@ $nom=$_POST['nom-prenom'];
 $adresse=$_POST['adresse'];;
 $ville=$_POST['ville'];;
 $cp=$_POST['CP'];
+$tel=$_POST['phone'];
+$email=$_POST['email'];
+
 //Destinataire
 $PDF->SetXY(135,40);
 $PDF->SetFont('Arial','B',10);
