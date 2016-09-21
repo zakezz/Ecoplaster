@@ -163,7 +163,7 @@
 			</table>
 			<tr id="boutonsurface" style="display: table-row">
 				<td colspan="3"><input type="button"
-					value="calculer la surface totale des fa&ccedil;ades &agrave; traiter"
+					value="Calculer la surface totale des fa&ccedil;ades &agrave; traiter"
 					onclick="calculSurface()"/></td>
 			</tr>
 			
@@ -179,7 +179,7 @@
 					name="Prix_totale" value="0" size="5px"/> €</td>
 					
 				<br \>
-				<td colspan="2"><a href="http://www.renovation-info-service.gouv.fr/mes-aides-financieres">Éstimation du crédis d'impots :</a> <input type="text" id="Aide" readonly="readonly"
+				<td colspan="2"><a href="http://www.renovation-info-service.gouv.fr/mes-aides-financieres">Estimation du crédit d'impots :</a> <input type="text" id="Aide" readonly="readonly"
 					name="Aide" value="0" size="5px"/> €</td>
 			
 			</tr>

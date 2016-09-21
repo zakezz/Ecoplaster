@@ -88,7 +88,7 @@
 				<br />
 				
 				<tr>
-				<td>&Eacute;paisseur de l'isolant :</td>
+				<td>&Eacute;paisseur de l'isolant (en mm) :</td>
 				<td><select name="epaisseur" id="epaisseur_isolant">
 						 <option value="6">6</option>
 						 <option value="7">7</option>
