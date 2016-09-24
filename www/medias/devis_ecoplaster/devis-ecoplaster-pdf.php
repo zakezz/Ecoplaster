@@ -26,7 +26,7 @@ $PDF->AddPage();
  // Page header
 
     // Logo
-    $PDF->Image('images/ecoplaster_top.png',35,13,120);
+    $PDF->Image('images/ecoplaster_top_sh.png',31,11,130);
     $PDF->Image('images/icon_Qualibat.png',165,12,20);
     
     // On rend l'alpha semi transparent
